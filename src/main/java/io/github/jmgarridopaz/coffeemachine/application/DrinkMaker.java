@@ -2,12 +2,15 @@ package io.github.jmgarridopaz.coffeemachine.application;
 
 public class DrinkMaker implements ForPlacingOrders {
 
-    private final ForObtainingRecipes recipeProvider;
-    private final ForDispensing dispenser;
+    private ForObtainingRecipes recipeProvider;
+    private ForDispensing dispenser;
 
     public DrinkMaker ( ForObtainingRecipes recipeProvider, ForDispensing dispenser ) {
         this.recipeProvider = recipeProvider;
         this.dispenser = dispenser;
+    }
+
+    public DrinkMaker() {
     }
 
     @Override
@@ -18,4 +21,13 @@ public class DrinkMaker implements ForPlacingOrders {
         }
     }
 
+    public void configure ( ForObtainingRecipes recipeProvider, ForDispensing dispenser) {
+        this.recipeProvider = recipeProvider;
+        this.dispenser = dispenser;
+    }
+
+    public boolean checkConsistency() {
+        // TODO check consistency ?
+        return true;
+    }
 }

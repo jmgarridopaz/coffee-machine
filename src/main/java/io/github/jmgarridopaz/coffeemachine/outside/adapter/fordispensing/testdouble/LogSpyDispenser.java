@@ -1,4 +1,4 @@
-package io.github.jmgarridopaz.coffeemachine.adapter.fordispensing.testdouble;
+package io.github.jmgarridopaz.coffeemachine.outside.adapter.fordispensing.testdouble;
 
 import io.github.jmgarridopaz.coffeemachine.application.*;
 

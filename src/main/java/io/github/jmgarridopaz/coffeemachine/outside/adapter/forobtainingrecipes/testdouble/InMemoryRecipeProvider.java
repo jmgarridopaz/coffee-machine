@@ -1,17 +1,9 @@
-package io.github.jmgarridopaz.coffeemachine.adapter.forobtainingrecipes.testdouble;
+package io.github.jmgarridopaz.coffeemachine.outside.adapter.forobtainingrecipes.testdouble;
 
 import io.github.jmgarridopaz.coffeemachine.application.Drink;
 import io.github.jmgarridopaz.coffeemachine.application.ForObtainingRecipes;
 import io.github.jmgarridopaz.coffeemachine.application.Ingredient;
 import io.github.jmgarridopaz.coffeemachine.application.Recipe;
-import org.testng.TestNG;
-import org.testng.xml.XmlPackage;
-import org.testng.xml.XmlSuite;
-import org.testng.xml.XmlTest;
-
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * DRIVEN ADAPTER

@@ -1,11 +1,11 @@
-package io.github.jmgarridopaz.coffeemachine.driver.forplacingorders.testcases;
+package io.github.jmgarridopaz.coffeemachine.outside.driver.forplacingorders.testcases;
 
+import io.github.jmgarridopaz.coffeemachine.application.DrinkMaker;
+import io.github.jmgarridopaz.coffeemachine.application.ForPlacingOrders;
 import org.testng.TestNG;
 import org.testng.xml.XmlClass;
-import org.testng.xml.XmlPackage;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,14 @@ public class TestDriver {
 
     private static final String REPORTS_DIRECTORY = System.getProperty("user.home") + File.separator + ".coffeemachine" + File.separator + "testreports";
 
-    public static void main (String[] args ) {
+    public static ForPlacingOrders drinkMaker;
+
+    public TestDriver ( ForPlacingOrders drinkMake ) {
+        drinkMaker = drinkMaker;
+    }
+
+    public void run() {
+
         // Run TestNG with a XML virtual file
         XmlSuite suite = new XmlSuite();
         suite.setName("CoffeMachine_TestSuite");
@@ -31,7 +38,7 @@ public class TestDriver {
         test.setName("CoffeeMachine_Test");
 
         List<XmlClass> testClasses = new ArrayList<XmlClass>();
-        testClasses.add ( new XmlClass(TestDrinkMaker.class) );
+        testClasses.add ( new XmlClass(io.github.jmgarridopaz.coffeemachine.driver.forplacingorders.testcases.TestDrinkMaker.class) );
         test.setClasses(testClasses);
 
         List<XmlSuite> suites = new ArrayList<XmlSuite>();
