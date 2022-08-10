@@ -7,6 +7,24 @@
 ---
 ![Coffe Machine](coffee-machine.png)
 
+
+This is an application to control the operation of a coffee machine.
+
+
+- Drivers (users of the application):
+
+___Buyer___: Places orders for getting a drink from the machine.
+
+___Maintenance man___: Checks the components of the machine to ensure that it works well.
+
+
+- Driven actors (needed by the application to do something):
+
+___Recipes Repository___: It stores the recipes of the drinks.
+
+___Dispensers___: They dispense the ingredients of an ordered drink.
+
+
 ### Environment:
 
 - OS: Ubuntu 20.04.4 LTS
